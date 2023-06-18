@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   iter.hpp                                           :+:      :+:    :+:   */
+/*   main_utils.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/18 09:06:33 by isojo-go          #+#    #+#             */
-/*   Updated: 2023/06/18 11:40:39 by isojo-go         ###   ########.fr       */
+/*   Created: 2023/06/18 09:05:37 by isojo-go          #+#    #+#             */
+/*   Updated: 2023/06/18 09:13:04 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ITER_HPP
-	#define ITER_HPP
+#include "../inc/main.hpp"
 
-	template <typename T>
-	void	iter(T* array, size_t array_len, void (*f)(T&))
-	{
-		size_t	i = 0;
+void	printBlueLine(std::string str)
+{
+	std::cout << "\033[0;94m" << str << "\033[0;39m" << std::endl;
+}
 
-		while (i < array_len)
-			f(array[i++]);
-	}
-
-#endif // ITER_HPP
+void	printRedLine(std::string str)
+{
+	std::cout << std::endl << "\033[0;31m" << str << "\033[0;39m" << std::endl;
+}

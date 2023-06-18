@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   iter.hpp                                           :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/18 09:06:33 by isojo-go          #+#    #+#             */
-/*   Updated: 2023/06/18 11:40:39 by isojo-go         ###   ########.fr       */
+/*   Created: 2023/06/18 09:05:34 by isojo-go          #+#    #+#             */
+/*   Updated: 2023/06/18 18:14:34 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ITER_HPP
-	#define ITER_HPP
+#include "../inc/main.hpp"
 
-	template <typename T>
-	void	iter(T* array, size_t array_len, void (*f)(T&))
-	{
-		size_t	i = 0;
+int	main(void)
+{
+	printRedLine("---- Testing default value for int ----");
+	test0();
+	printRedLine("----------------------------------------");
 
-		while (i < array_len)
-			f(array[i++]);
-	}
+	printRedLine("--------- Testing Array Class ----------");
+	test1();
+	printRedLine("----------------------------------------");
 
-#endif // ITER_HPP
+	
+	return (0);
+}
