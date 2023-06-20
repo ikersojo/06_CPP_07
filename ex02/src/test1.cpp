@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test1.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/18 18:24:30 by isojo-go          #+#    #+#             */
-/*   Updated: 2023/06/18 18:24:43 by isojo-go         ###   ########.fr       */
+/*   Updated: 2023/06/20 16:33:24 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,16 @@
 void	test1(void)
 {
 	Array<int> a1;
+	printBlueLine("a1:");
 	std::cout << a1 << std::endl;
 	printBlueLine("-------");
 
 	Array<int> a2(5);
 	printBlueLine("a2:");
 	std::cout << a2 << std::endl;
-		
+	printBlueLine("-------");
+	printBlueLine(" ");
+
 	printBlueLine("a2.size():");
 	std::cout << a2.size() << std::endl;
 

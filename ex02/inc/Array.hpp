@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isojo-go <isojo-go@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: isojo-go <isojo-go@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/18 11:41:26 by isojo-go          #+#    #+#             */
-/*   Updated: 2023/06/18 18:09:35 by isojo-go         ###   ########.fr       */
+/*   Updated: 2023/06/20 16:31:38 by isojo-go         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@
 			std::cout << "\033[0;93m" << "Default Array Constructor called"
 						<< "\033[0;39m" << std::endl;
 		this->_size = 0;
-		this->_elem = new T[1];
+		this->_elem = NULL;
 	}
 
 	template <typename T>
